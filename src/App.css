@@ -1,0 +1,90 @@
+/* App.css */
+
+/* Overall styles for the entire app */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.App-header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.App-header h1 {
+  margin-bottom: 10px;
+}
+
+.App-header p {
+  margin: 10px 0;
+}
+
+/* Styles for the cards section */
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  width: 300px;
+  text-align: left; /* Align text to the left within each card */
+}
+
+.card h1 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.card .icon {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.card img {
+  max-width: 80px; /* Limit the size of the icon images */
+}
+
+.card.supervisor {
+  border-top: 5px solid cyan;
+  top: 0;
+  left: 100px; /* Center horizontally */
+  transform: translateX(-5%);
+}
+
+.card.calculator {
+  border-top: 5px solid #1e90ff;
+  top: 0;
+  right: 100%; /* 50% to the right */
+  transform: translateX(50%);
+}
+
+.card.team {
+  border-top: 5px solid red;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.card.karma {
+  border-top: 5px solid orange;
+  bottom: 0;
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%);
+}
